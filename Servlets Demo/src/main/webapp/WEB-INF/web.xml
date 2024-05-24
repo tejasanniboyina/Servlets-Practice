@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
+  <display-name>Servlets Demo</display-name>
+
+
+	<!-- <servlet>
+		<servlet-name>MyServlet1</servlet-name>
+		<servlet-class>com.servletsdemo.AddServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MyServlet1</servlet-name>
+		<url-pattern>/add</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>MyServlet2</servlet-name>
+		<servlet-class>com.servletsdemo.SquareServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>MyServlet2</servlet-name>
+		<url-pattern>/sq</url-pattern>
+	</servlet-mapping> -->
+	
+		<!-- <servlet>
+		
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>MyServlet1</servlet-name>
+		<url-pattern>/src/main/java/com.servletsdemo.MyServlet</url-pattern>
+	</servlet-mapping>
+	 -->
+	
+	<!-- <context-param>
+		<param-name>name</param-name>
+		<param-value>teja</param-value>
+	</context-param>
+	
+	<context-param>
+		<param-name>phone</param-name>
+		<param-value>samsung</param-value>
+	</context-param>
+	
+	<servlet>
+			<servlet-name>MyServlet1</servlet-name>
+			<servlet-class>com.servletsdemo.MyServlet</servlet-class>
+		<init-param>	
+			<param-name>name</param-name>
+			<param-value>teja</param-value>
+		</init-param>
+	</servlet>  -->
+</web-app>
