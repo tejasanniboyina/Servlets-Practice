@@ -11,8 +11,9 @@ public class SqServlet extends HttpServlet{
 
 	public void doGet(HttpServletRequest req,HttpServletResponse res) throws IOException {
 		
+		int k = (int)req.getAttribute("k");
 		//getting a writer object to print something, this is must to print
 		PrintWriter out = res.getWriter();
-		out.println("square servlet is called");
+		out.println(k);
 	}
 }
