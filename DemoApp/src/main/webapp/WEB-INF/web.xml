@@ -9,4 +9,13 @@
 	<servlet-name>servlet1</servlet-name>
 	<url-pattern>/add</url-pattern>
 </servlet-mapping>
+
+<servlet>
+	<servlet-name>servlet2 </servlet-name>
+	<servlet-class>com.teja.servletdemo.SqServlet </servlet-class>
+</servlet>
+<servlet-mapping> 
+	<servlet-name>servlet2</servlet-name>
+	<url-pattern>/sq</url-pattern>
+</servlet-mapping>
 </web-app>
