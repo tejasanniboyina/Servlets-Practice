@@ -6,15 +6,16 @@ import java.io.PrintWriter;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 
 public class SqServlet extends HttpServlet{
 
 	public void doGet(HttpServletRequest req,HttpServletResponse res) throws IOException {
 		
-		int k = Integer.parseInt(req.getParameter("k"));
-	 	//getting a writer object to print something, this is must to print
+		HttpSession session = req.getSession();
+		int k = (int)session.getAttribute("k");
 		PrintWriter out = res.getWriter();
-		out.println(k);
+		out.println("the ressult is "+k);
 		
 		
 	}
