@@ -5,6 +5,7 @@ import java.io.PrintWriter;
 
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
+import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -19,7 +20,7 @@ public class AddServlet extends HttpServlet {
 		int k=i+j;
 		k = k*k;
 		
-//		res.sendRedirect("sq?k="+k);
+
 		
 		//to call another servlet  from here , we have 2 options
 		// 1) Request Dispatcher 2)Redirect 
@@ -27,8 +28,11 @@ public class AddServlet extends HttpServlet {
 //		RequestDispatcher rd = req.getRequestDispatcher("sq");
 //		rd.forward(req, res);
 		
+		//sending data using session
 		HttpSession session = req.getSession();
 		session.setAttribute("k", k);
 		
+		
+		res.sendRedirect("sq");
 	}
 }
