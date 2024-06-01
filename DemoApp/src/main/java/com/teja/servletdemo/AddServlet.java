@@ -18,7 +18,7 @@ public class AddServlet extends HttpServlet {
 		int k=i+j;
 		k = k*k;
 		
-		res.sendRedirect("sq");
+		res.sendRedirect("sq?k="+k);
 		
 		//to call another servlet  from here , we have 2 options
 		// 1) Request Dispatcher 2)Redirect
