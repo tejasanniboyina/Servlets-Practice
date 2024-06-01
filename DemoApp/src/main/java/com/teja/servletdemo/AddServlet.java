@@ -10,7 +10,17 @@ import jakarta.servlet.http.HttpServletResponse;
 public class AddServlet extends HttpServlet {
 
 	//we have to use only service() method
-	public void service(HttpServletRequest req,HttpServletResponse res) throws IOException {
+//	public void service(HttpServletRequest req,HttpServletResponse res) throws IOException {
+//		//getParameter will give  a String value 
+//		int i = Integer.parseInt(req.getParameter("num1"));
+//		int j = Integer.parseInt(req.getParameter("num2"));
+//		int k=i+j;
+//		//getWriter() returns the object of PrintWriter
+//		PrintWriter out = res.getWriter();
+//		out.println("The result is " + k);
+//	}
+	
+	public void doPost(HttpServletRequest req,HttpServletResponse res) throws IOException {
 		//getParameter will give  a String value 
 		int i = Integer.parseInt(req.getParameter("num1"));
 		int j = Integer.parseInt(req.getParameter("num2"));
