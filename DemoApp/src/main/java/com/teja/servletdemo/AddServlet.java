@@ -29,9 +29,12 @@ public class AddServlet extends HttpServlet {
 //		rd.forward(req, res);
 		
 		//sending data using session
-		HttpSession session = req.getSession();
-		session.setAttribute("k", k);
+//		HttpSession session = req.getSession();
+//		session.setAttribute("k", k);
 		
+		//sending data using Cookie, cookie is a class
+		Cookie cookie = new Cookie("k",k+""); //Cookie takes 2 string parameters so we added "" for int value k
+		res.addCookie(cookie );
 		
 		res.sendRedirect("sq");
 	}
