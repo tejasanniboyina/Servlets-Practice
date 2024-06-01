@@ -18,14 +18,14 @@ public class AddServlet extends HttpServlet {
 		int k=i+j;
 		k = k*k;
 		
-		req.setAttribute("k", k);
+		res.sendRedirect("sq");
 		
 		//to call another servlet  from here , we have 2 options
 		// 1) Request Dispatcher 2)Redirect
 		
 		//getReuestDispatcher() gives the object of RequestDispatcher
-		RequestDispatcher rd = req.getRequestDispatcher("sq");
-		rd.forward(req, res);
+//		RequestDispatcher rd = req.getRequestDispatcher("sq");
+//		rd.forward(req, res);
 		
 	}
 }
